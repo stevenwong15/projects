@@ -1,0 +1,10 @@
+name: simple_shiny_app
+title:
+username: stevenwong
+account: stevenwong
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12795794
+bundleId: 9135398
+url: https://stevenwong.shinyapps.io/simple_shiny_app/
+version: 1

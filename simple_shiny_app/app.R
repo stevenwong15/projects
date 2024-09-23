@@ -1,8 +1,9 @@
 library(data.table)
-library(ggplot)
+library(magrittr)
+library(ggplot2)
 library(shiny)
 
-DT <- fread("l.csv")[, .(
+DT <- fread("CollegeAdmissions_Data.csv")[, .(
 	college_name = name,
 	parent_income_percentile = factor(
 		par_income_bin,
@@ -39,3 +40,5 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
+
+# rsconnect::deployApp("~/Documents/projects/simple_shiny_app/")
